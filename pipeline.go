@@ -24,6 +24,10 @@ func (p *Pipeline) AsPipeline() *Pipeline {
 	return p
 }
 
+func (p *Pipeline) Free() {
+	C.g_object_unref(C.gpointer(p.g()))
+}
+
 func NewPipeline(name string) *Pipeline {
 	s := (*C.gchar)(C.CString(name))
 	defer C.free(unsafe.Pointer(s))
