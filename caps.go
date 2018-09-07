@@ -11,8 +11,9 @@ int capsRefCount(GstCaps *c) {
 import "C"
 
 import (
-	"github.com/greenkeytech/glib"
 	"unsafe"
+
+	"github.com/greenkeytech/glib"
 )
 
 type Caps C.GstCaps
