@@ -50,12 +50,7 @@ type AppSrc struct {
 }
 
 func NewAppSrc(name string) *AppSrc {
-	element := ElementFactoryMake("appsrc", name)
-
-	element.SetProperty("is-live", true)
-	element.SetProperty("block", true)
-
-	return &AppSrc{element}
+	return &AppSrc{ElementFactoryMake("appsrc", name)}
 }
 
 func (a *AppSrc) g() *C.GstAppSrc {
