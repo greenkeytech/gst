@@ -64,7 +64,7 @@ func (a *AppSrc) SetCaps(caps *Caps) {
 
 func (a *AppSrc) EOS() error {
 	ret := FlowReturn(C.gst_app_src_end_of_stream(a.g()))
-	if FlowReturn(ret) != GST_FLOW_OK {
+	if ret != GST_FLOW_OK {
 		return fmt.Errorf("appsrc eos: %v", ret)
 	}
 
