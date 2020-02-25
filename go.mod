@@ -1,3 +1,5 @@
 module github.com/greenkeytech/gst
 
-require github.com/greenkeytech/glib v0.0.0-20181116213058-bf286fc1f3b9
+require github.com/greenkeytech/glib v0.0.0-20200225211036-18673b2ad6aa
+
+go 1.13
