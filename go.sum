@@ -32,3 +32,5 @@ github.com/greenkeytech/glib v0.0.0-20200226211424-29066aa3bd87 h1:GRk+2v9eQiqSZ
 github.com/greenkeytech/glib v0.0.0-20200226211424-29066aa3bd87/go.mod h1:PeE7lRP5h2Z6e6jegwI1ifwyQjRIeWeVESga0NTu5CQ=
 github.com/greenkeytech/glib v0.0.0-20200226222005-5deb02753b4d h1:pv/Uamy/nS6EWyRrZOOIMLxVZ+Lzuljb4iacXNGR5Qc=
 github.com/greenkeytech/glib v0.0.0-20200226222005-5deb02753b4d/go.mod h1:PeE7lRP5h2Z6e6jegwI1ifwyQjRIeWeVESga0NTu5CQ=
+github.com/greenkeytech/glib v0.0.0-20200226222652-d0df11b78bb5 h1:HY8VvkjA+wqssHt/0e1khsxYKuMTuxbcY5jUw1rheus=
+github.com/greenkeytech/glib v0.0.0-20200226222652-d0df11b78bb5/go.mod h1:PeE7lRP5h2Z6e6jegwI1ifwyQjRIeWeVESga0NTu5CQ=
