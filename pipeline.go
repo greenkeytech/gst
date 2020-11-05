@@ -31,7 +31,7 @@ func (p *Pipeline) Free() {
 
 func (p *Pipeline) FlushAndResetTime() {
 	flushStart := C.gst_event_new_flush_start()
-	flushStop := C.gst_event_new_flush_stop(0)
+	flushStop := C.gst_event_new_flush_stop(1)
 	startRet := C.gst_element_send_event((*C.GstElement)(p.GetPtr()), flushStart)
 	fmt.Printf("startRet: %v", startRet)
 	stopRet := C.gst_element_send_event((*C.GstElement)(p.GetPtr()), flushStop)
