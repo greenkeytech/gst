@@ -28,6 +28,10 @@ func (p *Pipeline) Free() {
 	C.g_object_unref(C.gpointer(p.g()))
 }
 
+func (p *Pipeline) FlushAndResetTime() int {
+	return 42
+}
+
 func NewPipeline(name string) *Pipeline {
 	s := (*C.gchar)(C.CString(name))
 	defer C.free(unsafe.Pointer(s))
